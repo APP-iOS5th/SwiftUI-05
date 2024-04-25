@@ -18,7 +18,7 @@ struct ContentView: View {
     ]
     
     let colors: [Color] = [.green, .red, .yellow, .blue]
-    
+        
     var body: some View {
         VStack {
             ScrollView {
