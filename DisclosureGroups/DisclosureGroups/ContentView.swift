@@ -34,6 +34,7 @@ struct ContentView: View {
                     .font(.system(size: 25, design: .rounded))
                     .foregroundStyle(.blue)
             }
+            Spacer()
         }
         .padding()
     }
