@@ -13,23 +13,28 @@ struct ContentView: View {
     @Query private var items: [Task]
     
     var body: some View {
-        List {
-            ForEach(items) { item in
-                NavigationLink {
-                    Text("Item at \(item.text)")
-                } label: {
-                    Text(item.text)
+        NavigationStack {
+            List {
+                ForEach(items) { item in
+                    HStack {
+                        Button {
+                            item.completed.toggle()
+                        } label: {
+                            Image(systemName: item.completed ? "circle.fill" : "circle")
+                        }
+                        Text(item.text)
+                    }
                 }
+                .onDelete(perform: deleteItems)
             }
-            .onDelete(perform: deleteItems)
-        }
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                EditButton()
-            }
-            ToolbarItem {
-                Button(action: addItem) {
-                    Label("Add Item", systemImage: "plus")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    EditButton()
+                }
+                ToolbarItem {
+                    Button(action: addItem) {
+                        Label("Add Item", systemImage: "plus")
+                    }
                 }
             }
         }

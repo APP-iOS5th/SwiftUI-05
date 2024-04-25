@@ -33,7 +33,8 @@ struct TodoListApp: App {
         .modelContainer(sharedModelContainer)
     }
     
-    @MainActor private func initialzeData() {
+    @MainActor 
+    private func initialzeData() {
         do {
             let fetchDescriptor = FetchDescriptor<Task>()
             let fetchTasks = try sharedModelContainer.mainContext.fetch(fetchDescriptor)
