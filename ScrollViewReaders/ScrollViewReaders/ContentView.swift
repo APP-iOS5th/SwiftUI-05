@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var scrolledID: CharacterInfo.ID?
-
+    
     var body: some View {
         HStack(spacing: 20) {
             VStack {
@@ -25,7 +25,7 @@ struct ContentView: View {
                     .background(.blue)
                     .tint(.yellow)
                     
-                    ForEach(CharacterInfo.charArray) { image in
+                    ForEach(CharacterInfo.charArray, id: \.id) { image in
                         Image(systemName: image.name)
                             .font(.largeTitle)
                             .foregroundStyle(.blue)
@@ -50,7 +50,32 @@ struct ContentView: View {
                     .foregroundStyle(.blue)
                     .font(.title)
                 ScrollView {
-                    
+                    ScrollViewReader { proxy in
+                        Button("Go to letter Q") {
+                            proxy.scrollTo(16)
+                        }
+                        .padding()
+                        .background(.yellow)
+                        .tint(.blue)
+                        
+                        ForEach(CharacterInfo.charArray, id: \.id) { image in
+                            Image(systemName: image.name)
+                                .font(.largeTitle)
+                                .foregroundStyle(.yellow)
+                                .frame(width: 90, height: 90)
+                                .background(.blue)
+                                .padding()
+                        }
+                        
+                        Button("Go to letter G") {
+                            withAnimation {
+                                proxy.scrollTo(6, anchor: .top)
+                            }
+                        }
+                        .padding()
+                        .background(.yellow)
+                        .tint(.blue)
+                    }
                 }
             }
         }
