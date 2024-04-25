@@ -19,7 +19,7 @@ struct ContentView: View {
                     .font(.title)
                 ScrollView {
                     Button("Go to letter Q") {
-                        scrolledID = 16
+                        scrolledID = 11
                     }
                     .padding()
                     .background(.blue)
@@ -36,14 +36,14 @@ struct ContentView: View {
                     
                     Button("Go to letter G") {
                         withAnimation {
-                            scrolledID = 6
+                            scrolledID = 0
                         }
                     }
                     .padding()
                     .background(.blue)
                     .tint(.yellow)
                 }
-                .scrollPosition(id: $scrolledID)
+                .scrollPosition(id: $scrolledID, anchor: .bottom)
             }
             VStack {
                 Text("iOS 14+")
