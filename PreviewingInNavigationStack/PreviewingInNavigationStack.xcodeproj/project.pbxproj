@@ -11,6 +11,7 @@
 		37A89F1E2BDB463E007B8454 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A89F1D2BDB463E007B8454 /* ContentView.swift */; };
 		37A89F202BDB4640007B8454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37A89F1F2BDB4640007B8454 /* Assets.xcassets */; };
 		37A89F242BDB4640007B8454 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37A89F232BDB4640007B8454 /* Preview Assets.xcassets */; };
+		37A89F2B2BDB4717007B8454 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A89F2A2BDB4717007B8454 /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		37A89F1F2BDB4640007B8454 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37A89F212BDB4640007B8454 /* PreviewingInNavigationStack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PreviewingInNavigationStack.entitlements; sourceTree = "<group>"; };
 		37A89F232BDB4640007B8454 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		37A89F2A2BDB4717007B8454 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				37A89F1B2BDB463E007B8454 /* PreviewingInNavigationStackApp.swift */,
 				37A89F1D2BDB463E007B8454 /* ContentView.swift */,
+				37A89F2A2BDB4717007B8454 /* SecondView.swift */,
 				37A89F1F2BDB4640007B8454 /* Assets.xcassets */,
 				37A89F212BDB4640007B8454 /* PreviewingInNavigationStack.entitlements */,
 				37A89F222BDB4640007B8454 /* Preview Content */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37A89F2B2BDB4717007B8454 /* SecondView.swift in Sources */,
 				37A89F1E2BDB463E007B8454 /* ContentView.swift in Sources */,
 				37A89F1C2BDB463E007B8454 /* PreviewingInNavigationStackApp.swift in Sources */,
 			);
