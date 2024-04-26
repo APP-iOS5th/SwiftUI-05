@@ -27,6 +27,6 @@ struct ContentView: View {
     }
 }
 
-#Preview {
+#Preview("Content") {
     ContentView()
 }
