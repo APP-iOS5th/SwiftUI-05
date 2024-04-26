@@ -11,6 +11,7 @@
 		37A89F722BDB96B8007B8454 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A89F712BDB96B8007B8454 /* ContentView.swift */; };
 		37A89F742BDB96BA007B8454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37A89F732BDB96BA007B8454 /* Assets.xcassets */; };
 		37A89F772BDB96BA007B8454 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37A89F762BDB96BA007B8454 /* Preview Assets.xcassets */; };
+		37A89F7E2BDB96E3007B8454 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A89F7D2BDB96E3007B8454 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		37A89F712BDB96B8007B8454 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		37A89F732BDB96BA007B8454 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37A89F762BDB96BA007B8454 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		37A89F7D2BDB96E3007B8454 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				37A89F6F2BDB96B8007B8454 /* FormFieldDisableApp.swift */,
 				37A89F712BDB96B8007B8454 /* ContentView.swift */,
+				37A89F7D2BDB96E3007B8454 /* LoginView.swift */,
 				37A89F732BDB96BA007B8454 /* Assets.xcassets */,
 				37A89F752BDB96BA007B8454 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37A89F7E2BDB96E3007B8454 /* LoginView.swift in Sources */,
 				37A89F722BDB96B8007B8454 /* ContentView.swift in Sources */,
 				37A89F702BDB96B8007B8454 /* FormFieldDisableApp.swift in Sources */,
 			);
