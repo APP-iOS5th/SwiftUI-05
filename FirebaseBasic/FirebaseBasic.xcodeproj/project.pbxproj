@@ -20,6 +20,7 @@
 		370D10BE2BDF8EB600859526 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 370D10BD2BDF8EB600859526 /* FirebaseFirestore */; };
 		370D10C02BDF8EB600859526 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 370D10BF2BDF8EB600859526 /* FirebaseFirestoreSwift */; };
 		370D10C22BDF8EF100859526 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370D10C12BDF8EF100859526 /* Note.swift */; };
+		370D10C42BDF907B00859526 /* NoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370D10C32BDF907B00859526 /* NoteService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		370D10B92BDF740B00859526 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		370D10BB2BDF81DA00859526 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		370D10C12BDF8EF100859526 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		370D10C32BDF907B00859526 /* NoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				370D10B72BDF6B2A00859526 /* GoogleService-Info.plist */,
 				370D10A62BDF597600859526 /* Preview Content */,
 				370D10C12BDF8EF100859526 /* Note.swift */,
+				370D10C32BDF907B00859526 /* NoteService.swift */,
 			);
 			path = FirebaseBasic;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				370D10BA2BDF740B00859526 /* AuthenticationViewModel.swift in Sources */,
 				370D10A32BDF597500859526 /* ContentView.swift in Sources */,
 				370D10A12BDF597500859526 /* FirebaseBasicApp.swift in Sources */,
+				370D10C42BDF907B00859526 /* NoteService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
