@@ -24,7 +24,7 @@ extension UIApplication {
 }
 
 @Observable
-final class AutenticationViewModel {
+final class AuthenticationViewModel {
     enum State {
         case busy
         case signedIn
