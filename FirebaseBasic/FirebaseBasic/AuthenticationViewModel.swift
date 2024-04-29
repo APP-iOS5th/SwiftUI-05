@@ -23,15 +23,14 @@ extension UIApplication {
     }
 }
 
-@Observable
-final class AuthenticationViewModel {
+final class AuthenticationViewModel: ObservableObject {
     enum State {
         case busy
         case signedIn
         case signedOut
     }
     
-    var state: State = .busy
+    @Published var state: State = .busy
     private var authResult: AuthDataResult? = nil
     var username: String { authResult?.user.displayName ?? "" }
     var email: String { authResult?.user.email ?? "" }
