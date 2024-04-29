@@ -38,11 +38,20 @@ final class AutenticationViewModel {
     var photoURL: URL? { authResult?.user.photoURL }
     
     func logout() {
-        
+        GIDSignIn.sharedInstance.signOut()
+        GIDSignIn.sharedInstance.disconnect()
+        try? Auth.auth().signOut()
+        authResult = nil
+        state = .signedOut
     }
     
     func restorePreviousSignIn() {
-        
+        GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
+            if let error { print("Error: \(error.localizedDescription)")}
+            Task {
+                await self.signIn(user: user)
+            }
+        }
     }
     
     func login() {
