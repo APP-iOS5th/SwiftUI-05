@@ -19,6 +19,8 @@ struct ContentView: View {
                 SignInWithAppleButton(.signIn,
                                       onRequest: onRequest,
                                       onCompletion: onCompletion)
+                .signInWithAppleButtonStyle(.black)
+                .frame(width: 200, height: 50)
             } else {
                 Text("Welcome\n\(userName), \(userEmail)")
                     .foregroundStyle(.black)
