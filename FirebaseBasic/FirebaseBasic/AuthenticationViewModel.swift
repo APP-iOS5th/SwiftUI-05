@@ -23,6 +23,7 @@ extension UIApplication {
     }
 }
 
+@MainActor
 final class AuthenticationViewModel: ObservableObject {
     enum State {
         case busy
