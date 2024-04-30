@@ -26,6 +26,8 @@
 		370D10CA2BE06F3400859526 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370D10C92BE06F3400859526 /* NoteDetailView.swift */; };
 		370D10CC2BE072C300859526 /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370D10CB2BE072C300859526 /* AddNoteView.swift */; };
 		374D8FE62BE0A99D00680F2F /* AddCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D8FE52BE0A99D00680F2F /* AddCommentView.swift */; };
+		374D8FE82BE0BC8D00680F2F /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D8FE72BE0BC8D00680F2F /* Comment.swift */; };
+		374D8FEA2BE0BCBC00680F2F /* CommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D8FE92BE0BCBC00680F2F /* CommentService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		370D10C92BE06F3400859526 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
 		370D10CB2BE072C300859526 /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
 		374D8FE52BE0A99D00680F2F /* AddCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCommentView.swift; sourceTree = "<group>"; };
+		374D8FE72BE0BC8D00680F2F /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		374D8FE92BE0BCBC00680F2F /* CommentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 				370D10A62BDF597600859526 /* Preview Content */,
 				370D10C12BDF8EF100859526 /* Note.swift */,
 				370D10C32BDF907B00859526 /* NotesService.swift */,
+				374D8FE72BE0BC8D00680F2F /* Comment.swift */,
+				374D8FE92BE0BCBC00680F2F /* CommentService.swift */,
 			);
 			path = FirebaseBasic;
 			sourceTree = "<group>";
@@ -197,7 +203,9 @@
 				370D10BA2BDF740B00859526 /* AuthenticationViewModel.swift in Sources */,
 				374D8FE62BE0A99D00680F2F /* AddCommentView.swift in Sources */,
 				370D10CC2BE072C300859526 /* AddNoteView.swift in Sources */,
+				374D8FEA2BE0BCBC00680F2F /* CommentService.swift in Sources */,
 				370D10A32BDF597500859526 /* ContentView.swift in Sources */,
+				374D8FE82BE0BC8D00680F2F /* Comment.swift in Sources */,
 				370D10A12BDF597500859526 /* FirebaseBasicApp.swift in Sources */,
 				370D10C42BDF907B00859526 /* NotesService.swift in Sources */,
 				370D10C62BE06DFA00859526 /* NotesListView.swift in Sources */,

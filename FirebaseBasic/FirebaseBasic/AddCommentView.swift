@@ -40,7 +40,7 @@ struct AddCommentView: View {
     }
     
     func addComment() async {
-        var docRef = Firestore.firestore().collection("notes/\(note.docId!)/comments").document()
+        let docRef = Firestore.firestore().collection("notes/\(note.docId!)/comments").document()
         try? await docRef.setData([
             "date": Date(),
             "body": bodyText,
@@ -48,6 +48,7 @@ struct AddCommentView: View {
             "username": authenticationViewModel.username,
             "photoURL": authenticationViewModel.photoURL?.absoluteString ?? "",
         ])
+        
     }
 }
 
