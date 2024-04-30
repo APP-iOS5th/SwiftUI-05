@@ -24,6 +24,7 @@
 		370D10C62BE06DFA00859526 /* NotesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370D10C52BE06DFA00859526 /* NotesListView.swift */; };
 		370D10C82BE06F2400859526 /* NoteSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370D10C72BE06F2400859526 /* NoteSummaryView.swift */; };
 		370D10CA2BE06F3400859526 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370D10C92BE06F3400859526 /* NoteDetailView.swift */; };
+		370D10CC2BE072C300859526 /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370D10CB2BE072C300859526 /* AddNoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		370D10C52BE06DFA00859526 /* NotesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListView.swift; sourceTree = "<group>"; };
 		370D10C72BE06F2400859526 /* NoteSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteSummaryView.swift; sourceTree = "<group>"; };
 		370D10C92BE06F3400859526 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
+		370D10CB2BE072C300859526 /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				370D10A02BDF597500859526 /* FirebaseBasicApp.swift */,
 				370D10A22BDF597500859526 /* ContentView.swift */,
 				370D10C52BE06DFA00859526 /* NotesListView.swift */,
+				370D10CB2BE072C300859526 /* AddNoteView.swift */,
 				370D10C92BE06F3400859526 /* NoteDetailView.swift */,
 				370D10C72BE06F2400859526 /* NoteSummaryView.swift */,
 				370D10BB2BDF81DA00859526 /* ProfileView.swift */,
@@ -189,6 +192,7 @@
 				370D10C22BDF8EF100859526 /* Note.swift in Sources */,
 				370D10BC2BDF81DA00859526 /* ProfileView.swift in Sources */,
 				370D10BA2BDF740B00859526 /* AuthenticationViewModel.swift in Sources */,
+				370D10CC2BE072C300859526 /* AddNoteView.swift in Sources */,
 				370D10A32BDF597500859526 /* ContentView.swift in Sources */,
 				370D10A12BDF597500859526 /* FirebaseBasicApp.swift in Sources */,
 				370D10C42BDF907B00859526 /* NotesService.swift in Sources */,

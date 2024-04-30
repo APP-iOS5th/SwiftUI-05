@@ -22,7 +22,7 @@ struct NoteSummaryView: View {
 }
 
 #Preview {
-    List(0..<5) { item in
+    List(0..<5) { _ in
         NoteSummaryView(note: Note.sample)
     }
 }

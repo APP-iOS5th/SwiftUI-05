@@ -23,6 +23,17 @@ struct NotesListView: View {
             }
             .navigationTitle("FireNotes")
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                Button {
+                    isNewNotePresented.toggle()
+                } label: {
+                    Image(systemName: "plus")
+                        .font(.headline)
+                }
+            }
+            .sheet(isPresented: $isNewNotePresented) {
+                AddNoteView(service: service)
+            }
             .task {
                 service.fetch()
             }
