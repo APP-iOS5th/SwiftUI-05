@@ -18,9 +18,27 @@ struct NoteDetailView: View {
                 .border(.gray)
         }
         .padding(24)
+        .toolbar {
+            ToolbarItem(placement: .bottomBar) {
+                NavigationLink(destination: {
+                    AddCommentView()
+                }, label: {
+                    HStack {
+                        Image(systemName: "text.bubble.fill")
+                        Text("Add Comment")
+                    }
+                })
+                .padding()
+                .border(.gray)
+            }
+        }
+        .navigationTitle("Note Detail")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 #Preview {
-    NoteDetailView(note: Note.sampleWithLongBody)
+    NavigationStack {
+        NoteDetailView(note: Note.sampleWithLongBody)
+    }
 }
