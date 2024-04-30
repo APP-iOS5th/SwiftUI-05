@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import FirebaseFirestore
 
 struct AddCommentView: View {
     @StateObject var authenticationViewModel: AuthenticationViewModel = AuthenticationViewModel.shared
     
+    var note: Note
     @State private var bodyText: String = ""
     
     @Environment(\.dismiss) var dismiss
@@ -38,12 +40,19 @@ struct AddCommentView: View {
     }
     
     func addComment() async {
-        
+        var docRef = Firestore.firestore().collection("notes/\(note.docId!)/comments").document()
+        try? await docRef.setData([
+            "date": Date(),
+            "body": bodyText,
+            "userId": authenticationViewModel.userId,
+            "username": authenticationViewModel.username,
+            "photoURL": authenticationViewModel.photoURL?.absoluteString ?? "",
+        ])
     }
 }
 
 #Preview {
     NavigationStack {
-        AddCommentView()
+        AddCommentView(note: Note.sample)
     }
 }

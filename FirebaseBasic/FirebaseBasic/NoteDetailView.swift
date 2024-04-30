@@ -11,6 +11,9 @@ struct NoteDetailView: View {
     var note: Note
     var body: some View {
         VStack(spacing: 12) {
+            Text(note.docId ?? "N/A")
+                .font(.headline)
+                .foregroundStyle(.red)
             Text(note.title)
                 .font(.headline)
                 .fontWeight(.bold)
@@ -21,7 +24,7 @@ struct NoteDetailView: View {
         .toolbar {
             ToolbarItem(placement: .bottomBar) {
                 NavigationLink(destination: {
-                    AddCommentView()
+                    AddCommentView(note: note)
                 }, label: {
                     HStack {
                         Image(systemName: "text.bubble.fill")
