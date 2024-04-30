@@ -29,8 +29,9 @@ class NotesService: ObservableObject {
         }
     }
     
-    func addNote(title: String, date: Date, body: String) {
-        let note = Note(id: UUID().uuidString, title: title, date: date, body: body)
+    func addNote(title: String, date: Date, body: String, author: String) {
+        print("Author: \(author)")
+        let note = Note(id: UUID().uuidString, title: title, date: date, body: body, author: author)
         _ = try? dbCollection.addDocument(from: note)
         fetch()
     }

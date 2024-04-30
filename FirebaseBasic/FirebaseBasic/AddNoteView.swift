@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct AddNoteView: View {
+    @StateObject var authenticationViewModel: AuthenticationViewModel = AuthenticationViewModel.shared
+    
     @State private var title: String = ""
     @State private var bodyText: String = ""
     @Environment(\.dismiss) var dismiss
@@ -29,7 +31,7 @@ struct AddNoteView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
-                        service?.addNote(title: title, date: Date(), body: bodyText)
+                        service?.addNote(title: title, date: Date(), body: bodyText, author: authenticationViewModel.userId)
                         dismiss()
                     } label: {
                         Image(systemName: "checkmark")

@@ -36,6 +36,7 @@ final class AuthenticationViewModel: ObservableObject {
     var username: String { authResult?.user.displayName ?? "" }
     var email: String { authResult?.user.email ?? "" }
     var photoURL: URL? { authResult?.user.photoURL }
+    var userId: String { authResult?.user.uid ?? "" }
     
     func logout() {
         GIDSignIn.sharedInstance.signOut()
@@ -87,5 +88,4 @@ final class AuthenticationViewModel: ObservableObject {
             print("Error: \(error.localizedDescription)")
         }
     }
-    
 }

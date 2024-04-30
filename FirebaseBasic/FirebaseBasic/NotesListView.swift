@@ -43,4 +43,6 @@ struct NotesListView: View {
 
 #Preview {
     NotesListView()
+        .environmentObject(NotesService())
+        .environmentObject(AuthenticationViewModel())
 }
