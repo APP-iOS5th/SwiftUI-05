@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NotesListView: View {
-    @State private var service: NotesService = NotesService()
+    @StateObject private var service: NotesService = NotesService()
     @State private var isNewNotePresented = false
     
     var body: some View {
