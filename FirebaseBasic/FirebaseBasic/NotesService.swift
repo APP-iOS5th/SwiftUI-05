@@ -29,9 +29,10 @@ class NotesService: ObservableObject {
         }
     }
     
-    func addNote(title: String, date: Date, body: String, author: String) {
+    func addNote(title: String, date: Date, body: String, author: String, username: String, photoURL: URL?) {
         print("Author: \(author)")
-        let note = Note(id: UUID().uuidString, title: title, date: date, body: body, author: author)
+        let note = Note(id: UUID().uuidString, title: title, date: date, body: body,
+                        author: author, username: username, photoURL: photoURL)
         _ = try? dbCollection.addDocument(from: note)
         fetch()
     }
@@ -62,7 +63,7 @@ class NotesService: ObservableObject {
             try? document.data(as: Note.self)
         }
         self.notes = notes.sorted {
-            $0.date < $1.date
+            $0.date > $1.date
         }
     }
     

@@ -31,7 +31,10 @@ struct AddNoteView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
-                        service?.addNote(title: title, date: Date(), body: bodyText, author: authenticationViewModel.userId)
+                        service?.addNote(title: title, date: Date(), body: bodyText,
+                                         author: authenticationViewModel.userId,
+                                         username: authenticationViewModel.username,
+                                         photoURL: authenticationViewModel.photoURL)
                         dismiss()
                     } label: {
                         Image(systemName: "checkmark")
