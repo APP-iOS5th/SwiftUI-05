@@ -20,7 +20,10 @@
 		370D10BE2BDF8EB600859526 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 370D10BD2BDF8EB600859526 /* FirebaseFirestore */; };
 		370D10C02BDF8EB600859526 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 370D10BF2BDF8EB600859526 /* FirebaseFirestoreSwift */; };
 		370D10C22BDF8EF100859526 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370D10C12BDF8EF100859526 /* Note.swift */; };
-		370D10C42BDF907B00859526 /* NoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370D10C32BDF907B00859526 /* NoteService.swift */; };
+		370D10C42BDF907B00859526 /* NotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370D10C32BDF907B00859526 /* NotesService.swift */; };
+		370D10C62BE06DFA00859526 /* NotesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370D10C52BE06DFA00859526 /* NotesListView.swift */; };
+		370D10C82BE06F2400859526 /* NoteSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370D10C72BE06F2400859526 /* NoteSummaryView.swift */; };
+		370D10CA2BE06F3400859526 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370D10C92BE06F3400859526 /* NoteDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +37,10 @@
 		370D10B92BDF740B00859526 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		370D10BB2BDF81DA00859526 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		370D10C12BDF8EF100859526 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
-		370D10C32BDF907B00859526 /* NoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteService.swift; sourceTree = "<group>"; };
+		370D10C32BDF907B00859526 /* NotesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesService.swift; sourceTree = "<group>"; };
+		370D10C52BE06DFA00859526 /* NotesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListView.swift; sourceTree = "<group>"; };
+		370D10C72BE06F2400859526 /* NoteSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteSummaryView.swift; sourceTree = "<group>"; };
+		370D10C92BE06F3400859526 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +82,15 @@
 				370D10B92BDF740B00859526 /* AuthenticationViewModel.swift */,
 				370D10A02BDF597500859526 /* FirebaseBasicApp.swift */,
 				370D10A22BDF597500859526 /* ContentView.swift */,
+				370D10C52BE06DFA00859526 /* NotesListView.swift */,
+				370D10C92BE06F3400859526 /* NoteDetailView.swift */,
+				370D10C72BE06F2400859526 /* NoteSummaryView.swift */,
 				370D10BB2BDF81DA00859526 /* ProfileView.swift */,
 				370D10A42BDF597600859526 /* Assets.xcassets */,
 				370D10B72BDF6B2A00859526 /* GoogleService-Info.plist */,
 				370D10A62BDF597600859526 /* Preview Content */,
 				370D10C12BDF8EF100859526 /* Note.swift */,
-				370D10C32BDF907B00859526 /* NoteService.swift */,
+				370D10C32BDF907B00859526 /* NotesService.swift */,
 			);
 			path = FirebaseBasic;
 			sourceTree = "<group>";
@@ -176,12 +185,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				370D10CA2BE06F3400859526 /* NoteDetailView.swift in Sources */,
 				370D10C22BDF8EF100859526 /* Note.swift in Sources */,
 				370D10BC2BDF81DA00859526 /* ProfileView.swift in Sources */,
 				370D10BA2BDF740B00859526 /* AuthenticationViewModel.swift in Sources */,
 				370D10A32BDF597500859526 /* ContentView.swift in Sources */,
 				370D10A12BDF597500859526 /* FirebaseBasicApp.swift in Sources */,
-				370D10C42BDF907B00859526 /* NoteService.swift in Sources */,
+				370D10C42BDF907B00859526 /* NotesService.swift in Sources */,
+				370D10C62BE06DFA00859526 /* NotesListView.swift in Sources */,
+				370D10C82BE06F2400859526 /* NoteSummaryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
